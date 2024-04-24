@@ -21,10 +21,10 @@ return(
 <h1>{props.heading}</h1>
   <textarea className="form-control" id="Box1" rows="8" value={text}  onChange={(element)=> setText(element.target.value)} style={{backgroundColor:props.mode==='dark' ? 'grey' : 'white' , color:props.mode==='dark' ? 'white' : '#0a1730'}}></textarea>
 </div>
- <button className='btn btn-primary mx-1' onClick={()=>setText(text.toUpperCase() , props.showalert('Upper case has been enabled' , 'success'))}>UpperCase</button>
- <button className="btn btn-primary mx-1" onClick={()=>setText(text.toLocaleLowerCase() , props.showalert('Lower case has been enabled' , 'success'))}>LowerCase</button> 
- <button className="btn btn-primary mx-1" onClick={hadleCopy}>Copy Text</button>
- <button className="btn btn-primary mx-1" onClick={()=>setText("" , props.showalert('Text cleared successfully','success'))}>clear text</button>
+ <button className='btn btn-primary mx-1 my-1' onClick={()=>setText(text.toUpperCase() , props.showalert('Upper case has been enabled' , 'success'))}>UpperCase</button>
+ <button className="btn btn-primary mx-1 my-1" onClick={()=>setText(text.toLocaleLowerCase() , props.showalert('Lower case has been enabled' , 'success'))}>LowerCase</button> 
+ <button className="btn btn-primary mx-1 my-1" onClick={hadleCopy}>Copy Text</button>
+ <button className="btn btn-primary mx-1 my-1" onClick={()=>setText("" , props.showalert('Text cleared successfully','success'))}>clear text</button>
 <div className="container" style={{color:props.mode==='dark' ? 'white' : '#0a1730'}}>
 <h2>Your text summary</h2>
 <p>{text.split(' ')
