@@ -34,8 +34,8 @@ return(
             .filter(function(n) { return n != '' })
             .length} Minutes  read</p>
 
-<h3>{text.length > 0 ? text : 'Enter some text'}</h3>
-<p>{text}</p>
+<h3>Your text is below</h3>
+<p>{text.length > 0 ? text : 'Nothing to preview!'}</p>
 
 </div>
 </>
