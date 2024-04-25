@@ -5,7 +5,7 @@ export default  function TextForm(props)
     const [text , setText] = useState("");
 function hadleCopy()
 {
-  var text = document.getElementById("Box1");
+  var text = document.getElementById("Box1"); 
   text.select();
   navigator.clipboard.writeText(text.value);
  props.showalert('Text Copied Successfully','success');
